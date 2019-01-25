@@ -1,5 +1,5 @@
-
+<<<<<<< HEAD
 File changed by jambob- test
-
+=======
 This is a modification
-Change has been made
+>>>>>>> Change has been made
