@@ -1,0 +1,23 @@
+class User :
+    def __init__(self, username,password):
+        self.username =username
+        self.password =password
+        
+class LoginRepository:
+    def find (self,username,password):
+        return User(username,password)
+    
+class LoginService:
+
+    def __init__(self, repository):
+        self.repository = repository
+
+
+    def login_user(self,username,password):
+        login = self.repository.find (username,password)
+        return login
+
+login_service=LoginService(LoginRepository())
+
+user =login_service.login_user('John','John1')
+print (user.username)
