@@ -1,9 +1,9 @@
 class Payroll
 
-def __init__(self, rate):
-    self.rate = rate
-
-
+def __init__(self, standard_hours,overtime_hours):
+    self.standard_hours = int (standard_hours)
+    self.overtime_hours = int (overtime_hours)
+    
 
 def calculator (hours,rate):
 
@@ -20,5 +20,5 @@ def calculator (hours,rate):
     else:
         overtime = 0
 
-    return standard_hours, overtime_hours, overtime
+    return standard_hours, overtime_hours
 
