@@ -1,4 +1,4 @@
-from database import User
+from db import User
 
 class Login(User):
 
