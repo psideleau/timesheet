@@ -1,4 +1,6 @@
-    def __init__(self):
+from login import 
+class Pay 
+def __init__(self):
         self.pay = 0
         self.rate = 0
         self.hours = 0
