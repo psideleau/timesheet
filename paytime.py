@@ -1,6 +1,6 @@
-from login import 
-class Pay 
-def __init__(self):
+
+class Pay: 
+    def __init__(self):
         self.pay = 0
         self.rate = 0
         self.hours = 0
@@ -14,12 +14,3 @@ def __init__(self):
     def show(self):
         total = self.rate * self.hours
         self.pay = total
-# object class
-b = Pay()
-hourly_rate = float(input("What is your rate: "))
-
-# Need to call those functions!
-b.rate_1(hourly_rate)
-b.hours_1()
-b.show()
-print("Your pay is", b.pay)
