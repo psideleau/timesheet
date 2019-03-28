@@ -1,0 +1,23 @@
+class Pay:
+    def __init__(self):
+        self.pay = 0
+        self.rate = 0
+        self.hours = 0
+        print("Hello, please enter deposit and withdrawals")
+    def rate_1(self):
+        hourly_rate = float(input("What is your rate: "))
+        self.rate = hourly_rate
+    def hours_1(self):
+        timesheet_hours = float(input("What are your hours: "))
+        self.hours = timesheet_hours
+    def show(self):
+        total = self.rate * self.hours
+        self.pay = total
+        print(self.pay)
+# object class
+b = Pay()
+
+# Need to call those functions!
+b.rate_1()
+b.hours_1()
+b.show()
